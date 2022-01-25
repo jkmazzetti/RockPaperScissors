@@ -44,7 +44,7 @@ function game() {
     let playerScore = 0;
     let computerScore = 0;
     let endOfRound;
-    while(playerScore < 5 && computerScore<5) {
+    while (playerScore < 5 && computerScore < 5) {
         endOfRound = playRound(playerPlay(), computerPlay());
         if (endOfRound == 0) {
             computerScore++;
@@ -56,7 +56,7 @@ function game() {
         console.log("You Won The Match! " + playerScore + "-" + computerScore);
     } else if (playerScore < computerScore) {
         console.log("You Lost The Match! " + computerScore + "-" + playerScore);
-    }else{
+    } else {
         console.log("There Was A Tie!");
     }
 
