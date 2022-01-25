@@ -5,10 +5,10 @@ function computerPlay() {
 }
 function playerPlay() {
     let chosen = prompt("ROCK PAPER SCISSORS!").toUpperCase();
-    let isValid = false;
-    while (!isValid) {
+    let valid = false;
+    while (!valid) {
         if (chosen == "SCISSORS" || chosen == "PAPER" || chosen == "ROCK") {
-            isValid = true;
+            valid = true;
         } else {
             chosen = prompt("Try again. ROCK PAPER SCISSORS!").toUpperCase();
         }
